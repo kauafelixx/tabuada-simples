@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: spongeboy;
+    src: url(Spongeboy\ Me\ Bob.ttf);
+}
+
+body {
+    background-color: black;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(tabuada-mat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgb(212, 212, 212);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px black, inset 2px 2px 10px black;
+
+    h1 {
+        font-family: spongeboy;
+        padding: 30px;
+        font-size: 3em;
+        text-align: center;
+        filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.708));
+        letter-spacing: .2em;
+    }
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.474);
+    box-shadow: 4px 4px 10px black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    padding-bottom: 30px;
+
+
+    p {
+        padding: 20px;
+        color: white;
+        font-weight: 800;
+        text-shadow: 1px 1px 5px black;
+        letter-spacing: .1em;
+        text-align: center;
+    }
+
+    #txtn {
+        background-color: rgb(212, 212, 212);
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.612), 2px 2px 5px rgb(0, 0, 0);
+
+        margin-top: 15px;
+        padding-left: 10px;
+        height: 28px;
+        outline: none;
+        border: none;
+
+        border-radius: 30px;
+        width: 130px;
+    }
+
+    #botao {
+        background-color: rgb(212, 212, 212);
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.683);
+        margin: 15px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.281);
+        height: 28px;
+        border-radius: 30px;
+        width: 100px;
+        font-size: .7em;
+    }
+
+    #botao:hover {
+        box-shadow: 2px 2px 1px black;
+    }
+}
+
+#seltab {
+    background-image: url(folha.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 20px;
+
+    text-align: justify;
+    flex: auto;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+
+    font-size: 1em;
+    outline: none;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
